@@ -22,7 +22,6 @@
 # ───────────────────────────────────────────────────────────────
 
 [GLOBAL_FILTER]
-# 过滤标题党
 震惊
 
 
@@ -46,25 +45,60 @@
 深度学习
 机器学习
 /\bChatGPT\b/
-/\bOpenAI\b/
-/\bClaude\b/
-/\bGemini\b/
-/\bDeepSeek\b/
-生成式
+/\bOpenAI\b|\bSam Altman\b/ => OpenAI
+/\bClaude\b|\bAnthropic\b/ => Claude
+/\bGemini\b|\bDeepMind\b/ => Gemini
+/\bDeepSeek\b|深度求索|梁文锋/ => DeepSeek
 /\bSora\b/
 /\bMidjourney\b/
+/\bStable Diffusion\b/ => SD
 AIGC
+生成式
 智能体
-/\bAgent\b/
 
+[AI 芯片/算力]
+/英伟达|黄仁勋|\bNVIDIA\b|\bCUDA\b/ => 英伟达
+/\bAMD\b|苏姿丰/ => AMD
+/\bTPU\b/
 算力
 
 [AI 应用]
 具身智能
 机器人
-自动驾驶
+/自动驾驶|无人驾驶|智驾/ => 自动驾驶
 脑机
 /\bCopilot\b/
+
+
+# ═══════════════════════════════════════════════════════════════
+#                         科技领域
+# ═══════════════════════════════════════════════════════════════
+
+[芯片/半导体]
+芯片
+半导体
+光刻机
+/\bASML\b/
+/台积电|\bTSMC\b/ => 台积电
+
+[消费电子]
+/苹果|库克|\biPhone\b|\biPad\b|\bApple\b|\bVision Pro\b/ => 苹果
+/华为|余承东|鸿蒙|\bHUAWEI\b/ => 华为
+/三星|\bSamsung\b|\bGalaxy\b/ => 三星
+
+[互联网科技]
+/微软|\bMicrosoft\b|\bAzure\b/ => 微软
+/谷歌|\bGoogle\b|\bAndroid\b/ => 谷歌
+/特斯拉|马斯克|\bTesla\b/ => 特斯拉
+/\bMeta\b|扎克伯格/ => Meta
+/字节|抖音|\bTikTok\b|\bByteDance\b/ => 字节跳动
+/腾讯|微信|\bTencent\b/ => 腾讯
+
+[前沿科技]
+量子
+/航天|空间站|火箭|卫星|登月|火星/ => 航天
+/新能源|光伏|太阳能/ => 新能源
+/\bVR\b|\bAR\b|\bXR\b|元宇宙/ => XR/元宇宙
 
 
 # ═══════════════════════════════════════════════════════════════
@@ -77,16 +111,13 @@ AIGC
 /黄金价格|金价走势/ => 金价走势
 /贵金属|白银|铂金/ => 贵金属
 /避险资产|避险情绪/ => 避险
-/美联储|\bFed\b/ => 美联储
-/降息|加息|利率/ => 利率政策
 
 
 # ═══════════════════════════════════════════════════════════════
-#                         GitHub
+#                         GitHub / 开源
 # ═══════════════════════════════════════════════════════════════
 
 [GitHub]
-/\bGit\b/
+/\bGitHub\b/
 开源
-/开源项目|开源社区/ => 开源
 /\bTrending\b/ => GitHub Trending
